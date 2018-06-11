@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Pop Timer
+Icon=/usr/share/icons/hicolor/48x48/apps/unity-datetime-panel.png
+Exec=/usr/local/bin/poptimer
+Terminal=false
