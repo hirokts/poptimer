@@ -30,7 +30,7 @@ do
     '-s'|'--time-seconds' )
       # オプションに引数がなかった場合
       if [[ -z "$2" ]] || [[ "$2" =~ ^-+ ]]; then
-      echo "$PROGNAME: 「秒数が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
+      echo "$PROGNAME: 「秒数」が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
       exit 1
       else
         # オプションの引数設定
@@ -41,7 +41,7 @@ do
             INTERVAL=0
             I_SECONDS=$ARG
         else
-            echo "$PROGNAME: 「秒数が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
+            echo "$PROGNAME: 「秒数」が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
             exit 1
         fi
         shift 2
@@ -51,7 +51,7 @@ do
     '-m'|'--time-minutes' )
       # オプションに引数がなかった場合
       if [[ -z "$2" ]] || [[ "$2" =~ ^-+ ]]; then
-          echo "$PROGNAME: 「分数が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
+          echo "$PROGNAME: 「分数」が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
           exit 1
       else
         # オプションの引数設定
@@ -62,7 +62,7 @@ do
             INTERVAL=0
             I_MINUTES=$ARG
         else
-            echo "$PROGNAME: 「分数が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
+            echo "$PROGNAME: 「分数」が指定されていません。'$PROGNAME -h'で確認してください" 1>&2
             exit 1
         fi
         shift 2
